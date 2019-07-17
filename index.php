@@ -1,8 +1,26 @@
 <?php
-    echo "Teste PHP";
-    $a = [1,2,3,4,5,6,7,8,1,10];
-    foreach ($a as $index)
-    {
-        echo "\n $index";
+    $links = [
+        [
+            'name' => 'Home',
+            'route' => '/'
+        ],
+        [
+            'name' => 'About',
+            'route' => '/about.php'
+        ],
+        [
+            'name' => 'Sintaxe Basica',
+            'route' => 'documentation/referenciaDaLinguagem/sintaxeBasica.php'
+        ]    
+    ];  
+
+    echo '<ul>';
+    foreach($links as $link) {
+        echo '<li>';
+        
+        echo "<a href=". $link['route']  .">".   $link['name']  . '</a>';   
+
+        echo '</li>';
     }
-?>    
+    echo '<ul>';
+?>
