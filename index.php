@@ -17,6 +17,10 @@
                 [
                     'name' => 'Sintaxe Basica',
                     'route' => 'documentation/referenciaDaLinguagem/sintaxeBasica.php'
+                ],
+                [
+                    'name' => 'Operadores',
+                    'route' => 'documentation/referenciaDaLinguagem/operadores.php'
                 ]
             ]
         ],    
